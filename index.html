@@ -4,6 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Luke Yamaguchi Portfolio – Skills, Experience, and Technical Projects">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yamaluke.com/">
+<meta property="og:title" content="Luke Yamaguchi | Computer Engineering Portfolio">
+<meta property="og:description" content="Specializing in secure hardware architecture, embedded firmware, and RF security. UCLA M.S. Candidate.">
+<meta property="og:image" content="https://yamaluke.com/source/og-preview.jpeg">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Luke Yamaguchi | Portfolio">
+<meta property="twitter:description" content="UCLA Computer Engineering & Secure Systems Research.">
+
+
 <title>Luke Yamaguchi | Portfolio</title>
 <link rel="icon" href="./source/favicon_io/favicon.ico">
 
@@ -66,6 +77,21 @@
     text-transform: uppercase; letter-spacing: 1px;
   }
   .nav-buttons a:hover { color: var(--primary-blue); }
+
+  .resume-btn {
+    background: var(--primary-blue);
+    color: white !important; /* Forces white text on the blue background */
+    padding: 0px 7px;
+    border-radius: 6px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    margin-left: 5px; /* Adds a small gap from the "Contacts" link */
+  }
+
+  .resume-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    color: white !important;
+  }
 
   /* --- Hero & Typewriter --- */
   .hero-content {
@@ -290,6 +316,12 @@
     .skills-container { grid-template-columns: 1fr; gap: 20px; }
     .highlights-grid { grid-template-columns: 1fr; gap: 15px; }
     .course-grid { grid-template-columns: 1fr; }
+    .resume-btn {
+      margin-left: 0;
+      margin-top: 5px;
+      width: 80%; /* Makes it a nice wide button on mobile */
+      text-align: center;
+    }
   }
 </style>
 </head>
@@ -309,6 +341,7 @@
       <a href="#experience" aria-expanded="false">Research</a>
       <a href="#projects" aria-expanded="false">Projects</a>
       <a href="#contacts" aria-expanded="false">Contacts</a>
+      <a href="./source/LYResume.pdf" class="resume-btn" target="_blank">Resume📄</a>
     </div>
   </div>
 </nav>
@@ -383,8 +416,8 @@
           <div class="skill-list">
             <div class="skill-item">FPGA (Basys 3)</div>
             <div class="skill-item">ARM Cortex-M7</div>
-            <div class="skill-item">RISC-V Architecture</div>
             <div class="skill-item">STM32 / RPi Pico</div>
+            <div class="skill-item">RISC-V Architecture</div>
           </div>
         </div>
 
