@@ -7,8 +7,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yamaluke.com/">
 <meta property="og:title" content="Luke Yamaguchi | Computer Engineering Portfolio">
-<meta property="og:description" content="UCLA student specializing in secure hardware architecture, embedded firmware, and wireless systems.">
-<meta property="og:image" content="https://yamaluke.com/source/og-preview.jpeg">
+<meta property="og:description" content="UCLA student specializing in secure hardware architecture, embedded systems, and wireless systems.">
+<meta property="og:image" content="https://yamaluke.com/source/og-preview.jpg">
 
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Luke Yamaguchi | Portfolio">
@@ -354,7 +354,7 @@
 
       <div class="mission-block">
         <p style="margin:0; font-weight: 300;">
-          UCLA BS/MS (ESAP) Computer Engineering student specializing in <strong style="color:var(--primary-blue)">Embedded Firmware</strong> & <strong style="color:var(--primary-blue)">Secure Hardware Architecture</strong>, and exploring <strong style="color:var(--accent-cyan)">Wireless Systems</strong> for the love of math.
+          UCLA BS/MS (ESAP) Computer Engineering student specializing in <strong style="color:var(--primary-blue)">Embedded Systems</strong> & <strong style="color:var(--primary-blue)">Secure Hardware Architecture</strong>, and exploring <strong style="color:var(--accent-cyan)">Wireless Systems</strong> for the love of math.
         </p>
       </div>
   </div>
@@ -412,35 +412,44 @@
         </div>
 
         <div class="skill-category">
-          <h4>Hardware & Arch</h4>
+          <h4>Embedded Systems</h4>
           <div class="skill-list">
             <div class="skill-item">FPGA (Basys 3)</div>
             <div class="skill-item">ARM Cortex-M7</div>
             <div class="skill-item">STM32 / RPi Pico</div>
+            <div class="skill-item">UART / SPI / I2C</div>
             <div class="skill-item">RISC-V Architecture</div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h4>Wireless & Signal</h4>
+          <h4>Wireless & Networking</h4>
           <div class="skill-list">
             <div class="skill-item">SDR (ADALM-Pluto)</div>
             <div class="skill-item">GNU Radio</div>
-            <div class="skill-item">Wireshark / Protocols</div>
+            <div class="skill-item">Wireshark / Network Protocols</div>
             <div class="skill-item">RF Fingerprinting</div>
             <div class="skill-item">DSP Implementation</div>
           </div>
         </div>
 
         <div class="skill-category">
-          <h4>Tools & Lab</h4>
+          <h4>Software Tools</h4>
           <div class="skill-list">
             <div class="skill-item">Git / Linux / Docker</div>
             <div class="skill-item">GDB / OpenOCD</div>
             <div class="skill-item">MATLAB</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4>Lab Tools</h4>
+          <div class="skill-list">
             <div class="skill-item">Oscilloscopes</div>
-            <div class="skill-item">Digital Multimeter</div>
+            <div class="skill-item">Logic Analyzer</div>
+            <div class="skill-item">Spectrum Analyzer</div>
             <div class="skill-item">Analog Discovery 2</div>
+            <div class="skill-item">Digital Multimeter</div>
           </div>
         </div>
 
@@ -515,6 +524,7 @@
         <span class="tag">Verilog</span>
         <span class="tag">FPGA (Basys 3)</span>
         <span class="tag">RTL Design</span>
+        <span class="tag">Digital Verification</span>
       </div>
       <span class="expand-hint">View Details ↓</span>
       <div class="details-content">
@@ -522,7 +532,7 @@
           Designed and implemented a <strong>hardware-enforced multi-user authentication system</strong> on Basys 3 FPGA using Verilog. The system authenticates users via a keypad-based username/password interface and enforces <strong>role-based access control</strong> with admin, user, and guest accounts. Admins can create, modify, and delete users, while guest accounts automatically expire after a single successful unlock.
         </p>
         <p>
-          Hardware-enforced security features include automatic <strong>re-locking</strong> after a fixed timeout and <strong>brute-force lockout</strong> to mitigate unauthorized access attempts. Modular design integrates authentication logic, keypad decoding, display control, and countdown timers. All features, edge cases, state transitions, and fail-secure behavior were tested through extensive <strong>testbenches</strong> that went up to 670 lines.
+          Hardware-enforced security features include automatic <strong>re-locking</strong> and <strong>brute-force lockout</strong> to mitigate unauthorized access attempts. Validated the modular architecture through <strong>670+</strong> lines of simulation testbenches and .vcd <strong>waveform analysis</strong>, ensuring logic integrity and fail-secure behavior across all edge cases.
         </p>
         <div>Below is the schematic:</div>
         <img src="./source/lockS.JPG" alt="Hardware-Enforced Digital Lock" style="max-width:100%; height:auto; margin-top:20px; border-radius:8px; max-width: 650px;">
@@ -690,7 +700,7 @@
 
 <script>
   // Typewriter
-  const nTxt = "Luke Yamaguchi", sTxt = "Embedded Firmware | Secure Hardware Architecture | Wireless Systems";
+  const nTxt = "Luke Yamaguchi", sTxt = "Embedded Systems | Secure Hardware Architecture | Wireless Systems";
   let i=0, j=0;
   function typeN() { if(i<nTxt.length){document.getElementById("tp-name").innerHTML+=nTxt.charAt(i);i++;setTimeout(typeN,75);}else{setTimeout(typeS,500);} }
   function typeS() { if(j<sTxt.length){document.getElementById("tp-sub").innerHTML+=sTxt.charAt(j);j++;setTimeout(typeS,50);} }
