@@ -7,12 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yamaluke.com/">
 <meta property="og:title" content="Luke Yamaguchi | Computer Engineering Portfolio">
-<meta property="og:description" content="UCLA student specializing in secure hardware architecture, embedded systems, and wireless systems.">
+<meta property="og:description" content="UCLA student specializing in hardware security, computer architecture, and digital design.">
 <meta property="og:image" content="https://yamaluke.com/source/og-preview.jpg">
 
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Luke Yamaguchi | Portfolio">
-<meta property="twitter:description" content="UCLA Computer Engineering & Secure Systems Research.">
 
 
 <title>Luke Yamaguchi | Portfolio</title>
@@ -338,7 +337,7 @@
       <a href="#" aria-expanded="false">About</a>
       <a href="#skills" aria-expanded="false">Skills</a>
       <a href="#education" aria-expanded="false">Education</a>
-      <a href="#experience" aria-expanded="false">Research</a>
+      <a href="#experience" aria-expanded="false">Experience</a>
       <a href="#projects" aria-expanded="false">Projects</a>
       <a href="#contacts" aria-expanded="false">Contacts</a>
       <a href="./source/LYResume.pdf" class="resume-btn" target="_blank">Resume📄</a>
@@ -354,7 +353,7 @@
 
       <div class="mission-block">
         <p style="margin:0; font-weight: 300;">
-          UCLA BS/MS (ESAP) Computer Engineering student specializing in <strong style="color:var(--primary-blue)">Embedded Systems</strong> & <strong style="color:var(--primary-blue)">Secure Hardware Architecture</strong>, and exploring <strong style="color:var(--accent-cyan)">Wireless Systems</strong> for the love of math.
+          UCLA BS/MS <strong style="color:var(--primary-blue)">Computer Engineering</strong> student starting a summer internship at The Aerospace Corporation as an <strong style="color:var(--accent-cyan)">ASIC/FPGA Security Engineer</strong>.
         </p>
       </div>
   </div>
@@ -438,7 +437,9 @@
           <div class="skill-list">
             <div class="skill-item">Git / Linux / Docker</div>
             <div class="skill-item">GDB / OpenOCD</div>
+            <div class="skill-item">Vivado</div>
             <div class="skill-item">MATLAB</div>
+            <div class="skill-item">LTSpice</div>
           </div>
         </div>
 
@@ -498,7 +499,13 @@
   </section>
 
   <section id="experience">
-    <h2>Academic <span class="gradient-text">Research</span></h2>
+    <h2>Technical <span class="gradient-text">Experience</span></h2>
+    <div class="card">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <div><div style="color:var(--primary-blue); font-weight:600; font-size:0.9rem; ">The Aerospace Corporation</div><h3 style="margin:5px 0;">ASIC/FPGA Security Engineering Grad Intern</h3></div>
+        <span style="font-family:'JetBrains Mono'; font-size:0.8rem; color:var(--text-muted);">Jul 2026 — Sep 2026</span>
+      </div>
+    </div>
     <div class="card">
       <div style="display:flex; justify-content:space-between; align-items:flex-start;">
         <div><div style="color:var(--primary-blue); font-weight:600; font-size:0.9rem; ">Secure Systems and Architectures Lab - UCLA</div><h3 style="margin:5px 0;">Undergraduate Researcher</h3></div>
@@ -701,7 +708,7 @@
 
 <script>
   // Typewriter
-  const nTxt = "Luke Yamaguchi", sTxt = "Embedded Systems | Secure Hardware Architecture | Wireless Systems";
+  const nTxt = "Luke Yamaguchi", sTxt = "Hardware Security | Computer Architecture | Digital Design";
   let i=0, j=0;
   function typeN() { if(i<nTxt.length){document.getElementById("tp-name").innerHTML+=nTxt.charAt(i);i++;setTimeout(typeN,75);}else{setTimeout(typeS,500);} }
   function typeS() { if(j<sTxt.length){document.getElementById("tp-sub").innerHTML+=sTxt.charAt(j);j++;setTimeout(typeS,50);} }
