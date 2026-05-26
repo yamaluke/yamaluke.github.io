@@ -7,7 +7,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yamaluke.com/">
 <meta property="og:title" content="Luke Yamaguchi | Portfolio">
-<meta property="og:description" content="Incoming M.S. ECE at UCLA focused on hardware security, computer architecture, and digital design.">
+<meta property="og:description" content="Incoming M.S. ECE at UCLA focused on hardware security, computer architecture, and RTL design.">
 <meta property="og:image" content="https://yamaluke.com/source/og-preview.jpg">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:title" content="Luke Yamaguchi | Portfolio">
@@ -103,7 +103,7 @@
     min-height: calc(100vh - var(--nav-height));
     display: grid;
     place-items: center;
-    padding: 42px 20px;
+    padding: 24px 20px;
   }
 
   .holding-page {
@@ -111,12 +111,12 @@
     display: grid;
     justify-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 16px;
   }
 
   .profile-img {
-    width: 132px;
-    height: 132px;
+    width: 112px;
+    height: 112px;
     border-radius: 50%;
     border: 3px solid var(--card-border);
     object-fit: cover;
@@ -126,13 +126,13 @@
 
   h1 {
     margin: 0;
-    font-size: clamp(2.7rem, 8vw, 4.25rem);
+    font-size: clamp(2.65rem, 8vw, 3.85rem);
     line-height: 0.98;
     letter-spacing: -2px;
   }
 
   .eyebrow {
-    padding-top: 12px;
+    padding-top: 8px;
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
     font-size: clamp(0.95rem, 2.5vw, 1.2rem);
@@ -149,7 +149,7 @@
 
   .status-card {
     width: min(100%, 780px);
-    padding: 22px;
+    padding: 18px 22px;
     border: 1px solid var(--card-border);
     border-radius: 16px;
     background: rgba(59, 130, 246, 0.03);
@@ -161,6 +161,84 @@
     font-weight: 300;
   }
 
+  .featured-project {
+    width: min(100%, 780px);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 22px;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+    background:
+      linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(34, 211, 238, 0.06)),
+      linear-gradient(145deg, #0d0d0d 0%, #111111 100%);
+    border: 1px solid rgba(59, 130, 246, 0.42);
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24), 0 0 34px rgba(59, 130, 246, 0.09);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .featured-project:hover,
+  .featured-project:focus-visible {
+    transform: translateY(-4px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.28), 0 0 42px rgba(34, 211, 238, 0.14);
+    outline: none;
+  }
+
+  .featured-icon {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    color: var(--accent-cyan);
+    background: rgba(34, 211, 238, 0.08);
+    border: 1px solid rgba(34, 211, 238, 0.22);
+    border-radius: 12px;
+  }
+
+  .featured-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .featured-copy {
+    min-width: 0;
+  }
+
+  .featured-kicker {
+    display: block;
+    color: var(--accent-cyan);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .featured-title {
+    display: block;
+    margin-top: 3px;
+    font-size: 1.18rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .featured-desc {
+    display: block;
+    margin-top: 4px;
+    color: var(--text-muted);
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+
+  .featured-arrow {
+    color: var(--primary-blue);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.35rem;
+  }
+
   .link-grid {
     width: min(100%, 780px);
     display: grid;
@@ -169,12 +247,12 @@
   }
 
   .link-card {
-    min-height: 112px;
+    min-height: 88px;
     display: grid;
     align-content: center;
     justify-items: center;
     gap: 8px;
-    padding: 20px 14px;
+    padding: 16px 14px;
     font: inherit;
     color: inherit;
     text-decoration: none;
@@ -269,6 +347,15 @@
       border-radius: 14px;
     }
 
+    .featured-project {
+      grid-template-columns: auto 1fr;
+      padding: 18px;
+    }
+
+    .featured-arrow {
+      display: none;
+    }
+
     .link-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -285,6 +372,12 @@
 
     .link-card {
       min-height: 92px;
+    }
+
+    .featured-project {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
     }
   }
 </style>
@@ -308,13 +401,25 @@
       <p class="eyebrow">Incoming M.S. ECE at UCLA</p>
     </div>
 
-    <p class="focus-line">Hardware Security | Computer Architecture | Digital Design</p>
+    <p class="focus-line">Hardware Security | Computer Architecture | RTL Design</p>
 
     <div class="status-card">
       <p>
         I am currently updating my project portfolio. In the meantime, my main links are below.
       </p>
     </div>
+
+    <a class="featured-project" href="https://github.com/DanielChvat/Mini-GPU" target="_blank" rel="noopener noreferrer">
+      <span class="featured-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v4"/><path d="M15 1v4"/><path d="M9 19v4"/><path d="M15 19v4"/><path d="M1 9h4"/><path d="M1 15h4"/><path d="M19 9h4"/><path d="M19 15h4"/></svg>
+      </span>
+      <span class="featured-copy">
+        <span class="featured-kicker">Featured Project</span>
+        <span class="featured-title">Mini-GPU</span>
+        <span class="featured-desc">PyTorch-connected FPGA Mini-GPU with RTL control and hardware-enforced kernel authentication</span>
+      </span>
+      <span class="featured-arrow" aria-hidden="true">-&gt;</span>
+    </a>
 
     <div class="link-grid" aria-label="Main links">
       <a class="link-card" href="https://github.com/yamaluke" target="_blank" rel="noopener noreferrer">
@@ -350,7 +455,7 @@
       </button>
     </div>
 
-    <footer>© 2025 Luke Yamaguchi. All Rights Reserved.</footer>
+    <footer>© 2026 Luke Yamaguchi. All Rights Reserved.</footer>
   </section>
 </main>
 
