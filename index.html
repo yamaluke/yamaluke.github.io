@@ -335,10 +335,10 @@
     <button id="hamburger">☰</button>
     <div class="nav-buttons">
       <a href="#" aria-expanded="false">About</a>
-      <a href="#skills" aria-expanded="false">Skills</a>
-      <a href="#education" aria-expanded="false">Education</a>
       <a href="#experience" aria-expanded="false">Experience</a>
+      <a href="#education" aria-expanded="false">Education</a>
       <a href="#projects" aria-expanded="false">Projects</a>
+      <a href="#skills" aria-expanded="false">Skills</a>
       <a href="#contacts" aria-expanded="false">Contacts</a>
       <a href="./source/LYResume.pdf" class="resume-btn" target="_blank">Resume📄</a>
     </div>
@@ -377,9 +377,9 @@
         <span class="highlight-icon">🛡️</span>
         <span class="highlight-title">Hardware Security Focus</span>
         <span class="highlight-desc">
-          From <strong>PHY-layer RF fingerprinting</strong> at UCLA's SsysArch Lab to <strong>anti-tamper testing and hardware trojan detection</strong> at The Aerospace Corporation — building trust into hardware at every layer.
+          Building <strong>BBRAM anti-tamper validation</strong> and autonomous VEK280 threat detection at The Aerospace Corporation, with prior <strong>PHY-layer RF fingerprinting</strong> research at UCLA's SsysArch Lab.
         </span>
-        <span class="expand-hint">View Research Details →</span>
+        <span class="expand-hint">View Experience Details →</span>
       </a>
 
       <a href="#projects" class="highlight-card" aria-expanded="false">
@@ -394,74 +394,33 @@
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Technical <span class="gradient-text">Skills</span></h2>
+  <section id="experience">
+    <h2>Technical <span class="gradient-text">Experience</span></h2>
     <div class="card">
-      <div class="skills-container">
-        
-        <div class="skill-category">
-          <h4>Languages</h4>
-          <div class="skill-list">
-            <div class="skill-item">C / C++</div>
-            <div class="skill-item">Python</div>
-            <div class="skill-item">MIPS Assembly</div>
-            <div class="skill-item">Bash / Shell</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h4>Hardware Design</h4>
-          <div class="skill-list">
-            <div class="skill-item">Verilog / SystemVerilog</div>
-            <div class="skill-item">Vivado / Yosys</div>
-            <div class="skill-item">FPGA (Artix-7, Versal)</div>
-            <div class="skill-item">RTL Simulation (iverilog, GTKWave)</div>
-            <div class="skill-item">Digital Verification</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h4>Embedded Systems</h4>
-          <div class="skill-list">
-            <div class="skill-item">ARM Cortex-M7</div>
-            <div class="skill-item">STM32 / RPi Pico</div>
-            <div class="skill-item">UART / SPI / I2C</div>
-            <div class="skill-item">RISC-V Architecture</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h4>Wireless & Networking</h4>
-          <div class="skill-list">
-            <div class="skill-item">SDR (ADALM-Pluto)</div>
-            <div class="skill-item">GNU Radio</div>
-            <div class="skill-item">Wireshark / Network Protocols</div>
-            <div class="skill-item">RF Fingerprinting</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h4>Software Tools</h4>
-          <div class="skill-list">
-            <div class="skill-item">Git / Linux / Docker</div>
-            <div class="skill-item">GDB / OpenOCD</div>
-            <div class="skill-item">MATLAB</div>
-            <div class="skill-item">LTSpice</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h4>Lab Tools</h4>
-          <div class="skill-list">
-            <div class="skill-item">Oscilloscopes</div>
-            <div class="skill-item">Logic Analyzer</div>
-            <div class="skill-item">Spectrum Analyzer</div>
-            <div class="skill-item">Analog Discovery 2</div>
-            <div class="skill-item">Digital Multimeter</div>
-          </div>
-        </div>
-
+      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <div><div style="color:var(--primary-blue); font-weight:600; font-size:0.9rem; ">The Aerospace Corporation</div><h3 style="margin:5px 0;">ASIC/FPGA Security Engineering Grad Intern</h3></div>
+        <span style="font-family:'JetBrains Mono'; font-size:0.8rem; color:var(--text-muted);">Jun 2026 — Sep 2026</span>
       </div>
+      <ul style="color:var(--text-muted); padding-left:20px;">
+        <li>Developing a <strong>BBRAM anti-tamper zeroization test suite</strong> on the AMD Versal VEK280 to validate protected key-storage behavior before radiation testing</li>
+        <li>Writing <strong>bare-metal C firmware</strong> for the VEK280 RPU and building Vivado/Vitis platform infrastructure, including PLM boot support for NVM library access</li>
+        <li>Implementing manual and interrupt-driven zeroization trigger paths and building Monte Carlo fault-injection emulation to evaluate robustness against radiation-induced faults</li>
+        <li>Prototyping an <strong>autonomous onboard VEK280 APU/PetaLinux threat detection and mitigation pipeline</strong> that analyzes SysMon temperature, voltage, current, and power telemetry from multi-day board operation</li>
+        <li>Trained a <strong>variational autoencoder</strong> for telemetry anomaly detection and validated initial attack simulations using Python-based board heating experiments</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <div><div style="color:var(--primary-blue); font-weight:600; font-size:0.9rem; ">Secure Systems and Architectures Lab - UCLA</div><h3 style="margin:5px 0;">Undergraduate Researcher</h3></div>
+        <span style="font-family:'JetBrains Mono'; font-size:0.8rem; color:var(--text-muted);">Oct 2025 — Jun 2026</span>
+      </div>
+      <ul style="color:var(--text-muted); padding-left:20px;">
+        <li>Investigated <strong>PHY-layer vulnerabilities</strong> in BLE protocols by analyzing unique hardware-level physical fingerprints</li>
+        <li>Built a real-time DSP pipeline in <strong>GNU Radio</strong> to extract physical-layer features from wireless signals</li>
+        <li>Trained ML models for <strong>RF device authentication</strong> on a Linux remote server</li>
+        <li>Implemented <strong>adversarial RF spoofing attacks</strong> to evaluate the robustness of the RF fingerprinting system </li>
+        <li>Developed universal <strong>adversarial perturbation attacks</strong> against RF fingerprinting models and conducted over-the-air spoofing experiments using HackRF SDR</li>
+      </ul>
     </div>
   </section>
 
@@ -505,34 +464,6 @@
     </div>
   </section>
 
-  <section id="experience">
-    <h2>Technical <span class="gradient-text">Experience</span></h2>
-    <div class="card">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-        <div><div style="color:var(--primary-blue); font-weight:600; font-size:0.9rem; ">The Aerospace Corporation</div><h3 style="margin:5px 0;">ASIC/FPGA Security Engineering Grad Intern</h3></div>
-        <span style="font-family:'JetBrains Mono'; font-size:0.8rem; color:var(--text-muted);">Jun 2026 — Sep 2026</span>
-      </div>
-      <ul style="color:var(--text-muted); padding-left:20px;">
-        <li>Developing a <strong>DevSecOps pipeline</strong> for hardware trojan detection in ASIC/FPGA designs</li>
-        <li>Building a test platform on the <strong>Xilinx Versal VEK280</strong> to validate anti-tampering features, triggering tamper alerts and executing protection responses for eventual <strong>radiation testing</strong></li>
-        <li>Prototyping an <strong>on-board LLM</strong> deployed on the VEK280 for real-time threat detection and autonomous mitigation through script execution and programmable logic reconfiguration</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-        <div><div style="color:var(--primary-blue); font-weight:600; font-size:0.9rem; ">Secure Systems and Architectures Lab - UCLA</div><h3 style="margin:5px 0;">Undergraduate Researcher</h3></div>
-        <span style="font-family:'JetBrains Mono'; font-size:0.8rem; color:var(--text-muted);">Oct 2025 — Jun 2026</span>
-      </div>
-      <ul style="color:var(--text-muted); padding-left:20px;">
-        <li>Investigated <strong>PHY-layer vulnerabilities</strong> in BLE protocols by analyzing unique hardware-level physical fingerprints</li>
-        <li>Built a real-time DSP pipeline in <strong>GNU Radio</strong> to extract physical-layer features from wireless signals</li>
-        <li>Trained ML models for <strong>RF device authentication</strong> on a Linux remote server</li>
-        <li>Implemented <strong>adversarial RF spoofing attacks</strong> to evaluate the robustness of the RF fingerprinting system </li>
-        <li>Developed universal <strong>adversarial perturbation attacks</strong> against RF fingerprinting models and conducted over-the-air spoofing experiments using HackRF SDR</li>
-      </ul>
-    </div>
-  </section>
-
   <section id="projects">
     <h2>Technical <span class="gradient-text">Projects</span> <span style="font-size:0.8rem; font-weight:400; color:var(--text-muted);">(Click to expand)</span></h2>
     
@@ -540,7 +471,7 @@
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <h3 style="margin:0;">Secure Mini-GPU Accelerator</h3>
       </div>
-      <div style="display:flex; align-items:center;">
+      <div style="display:flex; align-items:center; flex-wrap:wrap;">
         <span class="tag">Verilog</span>
         <span class="tag">SystemVerilog</span>
         <span class="tag">Vivado</span>
@@ -552,16 +483,16 @@
       <div class="details-content">
         <p><strong>Collaborative project with Daniel Chvat — UCLA CS 152B</strong></p>
         <p>
-          Built an <strong>FPGA-based GPU accelerator</strong> on the Basys 3 (Artix-7 XC7A35T) featuring <strong>SIMT execution</strong>, a custom 32-bit ISA, PyTorch backend integration, and a full compiler pipeline. The system successfully <strong>trained a CNN on MNIST</strong> end-to-end through the PyTorch backend. Timing closed at 75 MHz with <strong>97.5% LUT utilization</strong> (20,275/20,800 LUTs).
+          Built an <strong>FPGA-based GPU accelerator</strong> on the Basys 3 (Artix-7 XC7A35T) with <strong>SIMT execution</strong>, a custom 32-bit ISA, PyTorch backend integration, and a compiler flow. The system trained a CNN on MNIST end-to-end and closed timing at 75 MHz with <strong>97.5% LUT utilization</strong>.
         </p>
         <p>
-          Designed and implemented the entire <strong>host-device communication subsystem</strong>: a custom packet protocol (SOF, CMD, ADDR, LEN, PAYLOAD, CRC) with FSM-based serial RX/TX modules and a communication controller handling <strong>10+ command types</strong> over UART. Built the <strong>memory bus controller</strong> for host-core arbitration with security-aware access control.
+          Designed the <strong>host-device communication subsystem</strong>, including a CRC-protected UART packet protocol, FSM-based RX/TX modules, a command controller supporting <strong>10+ command types</strong>, and a memory bus controller for host-core arbitration.
         </p>
         <p>
-          Engineered a <strong>hardware-enforced kernel verification security gate</strong> using SHA-256, authenticating kernels against golden hashes stored in BRAM before execution. Designed the security FSM (IDLE → LOAD → FINALIZE → VERIFY → LOCK → EXECUTE → ERROR) with instruction memory zeroization on security reset. Identified and patched <strong>5 security vulnerabilities</strong>, including a residual memory exploit. Reduced SHA-256 core area by <strong>54%</strong> (10,507 → 4,870 cells) through synthesis optimizations, with zeroization adding only 52 LUTs (+2.4%).
+          Engineered a <strong>hardware-enforced kernel verification gate</strong> using SHA-256, authenticating kernels against golden hashes in BRAM before execution. Added instruction-memory zeroization on security reset, patched <strong>5 security vulnerabilities</strong>, and reduced SHA-256 core area by <strong>54%</strong> through synthesis optimizations.
         </p>
         <p>
-          Also designed a full <strong>encryption subsystem</strong> (AES-CTR, HMAC-SHA256, ChaCha20 CSPRNG, hardware session key derivation) that was prototyped but ultimately exceeded FPGA resource limits (~23k logic cells needed vs. available budget).
+          Prototyped an <strong>encryption subsystem</strong> with AES-CTR, HMAC-SHA256, ChaCha20 CSPRNG, and hardware session key derivation; excluded it from the final FPGA build after resource analysis showed it exceeded the available logic budget.
         </p>
         <div>
           <p>Github: <a href="https://github.com/DanielChvat/Mini-GPU" style="color:#ffffff;" target="_blank" rel="noopener noreferrer">https://github.com/DanielChvat/Mini-GPU</a></p>
@@ -576,7 +507,7 @@
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <h3 style="margin:0;">Hardware-Enforced Authentication System</h3>
       </div>
-      <div style="display:flex; align-items:center;">
+      <div style="display:flex; align-items:center; flex-wrap:wrap;">
         <span class="tag">Verilog</span>
         <span class="tag">Vivado</span>
         <span class="tag">FPGA (Artix 7)</span>
@@ -584,10 +515,10 @@
       <span class="expand-hint">View Details ↓</span>
       <div class="details-content">
         <p>
-          Designed and implemented a <strong>hardware-enforced multi-user authentication system</strong> on Basys 3 FPGA using Verilog. The system authenticates users via a keypad-based username/password interface and enforces <strong>role-based access control</strong> with admin, user, and guest accounts. Admins can create, modify, and delete users, while guest accounts automatically expire after a single successful unlock.
+          Designed a <strong>hardware-enforced multi-user authentication system</strong> on a Basys 3 FPGA in Verilog. The design authenticates users through a keypad interface and enforces <strong>role-based access control</strong> across admin, user, and guest accounts.
         </p>
         <p>
-          Hardware-enforced security features include automatic <strong>re-locking</strong> and <strong>brute-force lockout</strong> to mitigate unauthorized access attempts. Validated the modular architecture through <strong>670+</strong> lines of simulation testbenches and .vcd <strong>waveform analysis</strong>, ensuring logic integrity and fail-secure behavior across all edge cases.
+          Implemented automatic <strong>re-locking</strong>, <strong>brute-force lockout</strong>, admin account management, and single-use guest credentials. Validated fail-secure behavior with <strong>670+</strong> lines of simulation testbenches and waveform analysis.
         </p>
         <div>Below is the schematic:</div>
         <img src="./source/lockS.JPG" alt="Hardware-Enforced Digital Lock" style="max-width:100%; height:auto; margin-top:20px; border-radius:8px; max-width: 650px;">
@@ -596,9 +527,63 @@
 
     <div class="card project-card" onclick="this.classList.toggle('expanded')" aria-expanded="false">
       <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 style="margin:0;">CS 111 - Operating System Projects</h3>
+      </div>
+      <div style="display:flex; align-items:center; flex-wrap:wrap;">
+        <span class="tag">Low Level C</span>
+        <span class="tag">Multi-Threaded Programming</span>
+        <span class="tag">Multi-Processed Programming</span>
+        <span class="tag">Network Protocols</span>
+      </div>
+      <span class="expand-hint">View Details ↓</span>
+      <div class="details-content">
+        <div>
+          <p>Note: I am not allowed to publicly share the code due to course policies.</p>
+          <h3>Shell Implementation</h3>
+          <p>
+            Built a Unix-like shell in C using <strong>fork/execve/waitpid</strong>, process groups, terminal control, signal handling, PATH resolution, environment inheritance, and I/O redirection.
+          </p>
+        </div>
+        <div>
+          <h3>Pintos Kernel Syscalls</h3>
+          <p>
+            Implemented userspace system calls in Pintos with validated user memory access, per-process <strong>file descriptor tables</strong>, synchronized file system calls, process cleanup, and illegal-access termination.
+          </p>
+        </div>
+        <div>
+          <h3>Network Server</h3>
+          <p>
+            Developed an HTTP server in C with static file serving, directory listing, path validation to prevent traversal, correct content lengths, error handling, and concurrent request handling with processes or POSIX threads.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card project-card" onclick="this.classList.toggle('expanded')" aria-expanded="false">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 style="margin:0;">Multi-Agent Access Control</h3>
+      </div>
+      <div style="display:flex; align-items:center; flex-wrap:wrap;">
+        <span class="tag">AI Security</span>
+        <span class="tag">Access Control</span>
+      </div>
+      <span class="expand-hint">View Details ↓</span>
+      <div class="details-content">
+        <p><strong>Research Lead</strong></p>
+        <p>
+          Developed an <strong>access control framework</strong> for multi-agent systems where LLMs interact with shared sensitive resources. The framework mitigates the <strong>Confused Deputy problem</strong> by tracking instruction provenance and routing tool calls through a centralized Privilege Control Gateway.
+        </p>
+        <p>
+          Implemented the framework in Python for a financial services testbed. Evaluation against baseline, RBAC, and ABAC models reduced attack success rates by <strong>65%</strong> while preserving high workflow throughput.
+        </p>
+      </div>
+    </div>
+
+    <div class="card project-card" onclick="this.classList.toggle('expanded')" aria-expanded="false">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
         <h3 style="margin:0;">Mars Rover - UCLA Hackathon</h3>
       </div>
-      <div style="display:flex; align-items:center;">
+      <div style="display:flex; align-items:center; flex-wrap:wrap;">
         <span class="tag">Embedded Python</span>
         <span class="tag">Raspberry Pi Pico</span>
         <span class="tag">ESP32</span>
@@ -608,7 +593,10 @@
       <div class="details-content">
         <p><strong>Project Lead & Software Lead</strong></p>
         <p>
-          Designed and developed an autonomous <strong>Raspberry Pi Pico</strong> rover equipped with an ESP32 camera and environmental sensors, including ultrasonic distance and temperature/humidity modules. Built a responsive web interface using React to stream live camera footage and issue real-time commands, while implementing an <strong>MQTT-based communication architecture</strong> between the web client and embedded hardware. Also developed the Pico <strong>firmware</strong> to handle motor control, sensor acquisition, and bidirectional data exchange, optimizing messaging and control logic to reduce end-to-end latency by <strong>86%</strong>. Led a four-person team, coordinating rapid hardware prototyping, software integration, and debugging under strict time constraints, resulting in <strong>3rd</strong> place overall at a 48-hour UCLA hackathon.
+          Led embedded software for an autonomous <strong>Raspberry Pi Pico</strong> rover with ESP32 camera streaming, ultrasonic sensing, and temperature/humidity telemetry. Built Pico firmware for motor control, sensor acquisition, and bidirectional command handling.
+        </p>
+        <p>
+          Implemented an <strong>MQTT-based communication architecture</strong> between the rover and web client, reducing end-to-end command latency by <strong>86%</strong>. Led a four-person team to <strong>3rd</strong> place overall at a 48-hour UCLA hackathon.
         </p>
         <div>
           <p>Github: <a href="https://github.com/yamaluke/HAcK-Team-7-Code" style="color:#ffffff;" target="_blank" rel="noopener noreferrer">https://github.com/yamaluke/HAcK-Team-7-Code</a></p>
@@ -623,13 +611,16 @@
       <div style="display:flex; justify-content:space-between; align-items:center;">
         <h3 style="margin:0;">Autonomous Embedded Race Car</h3>
       </div>
-      <div style="display:flex; align-items:center;">
+      <div style="display:flex; align-items:center; flex-wrap:wrap;">
         <span class="tag">Embedded C</span>
       </div>
       <span class="expand-hint">View Details ↓</span>
       <div class="details-content">
         <p>
-          Developed <strong>bare-metal C firmware</strong> to control a high-speed line-following car using an 8-sensor array of phototransistors. Implemented low-level PWM and GPIO control to interface with motor drivers and sensors, and designed real-time sensor fusion and PID control algorithms to enable stable, precise line tracking at high speeds. The system was optimized for low-latency control and deterministic timing, achieving the <strong>2nd</strong> fastest overall time in competition.
+          Developed <strong>bare-metal C firmware</strong> for a high-speed line-following car using an 8-sensor phototransistor array. Implemented low-level PWM/GPIO motor control, real-time sensor fusion, and PID control for deterministic low-latency behavior.
+        </p>
+        <p>
+          Tuned the control loop under competition constraints, achieving the <strong>2nd</strong> fastest overall time.
         </p>
         <p>Github: <a href="https://github.com/yamaluke/Race-Car-Project" style="color:#ffffff;" target="_blank" rel="noopener noreferrer">https://github.com/yamaluke/Race-Car-Project</a></p>
       </div>
@@ -637,29 +628,9 @@
 
     <div class="card project-card" onclick="this.classList.toggle('expanded')" aria-expanded="false">
       <div style="display:flex; justify-content:space-between; align-items:center;">
-        <h3 style="margin:0;">Multi-Agent Access Control</h3>
-      </div>
-      <div style="display:flex; align-items:center;">
-        <span class="tag">AI Security</span>
-        <span class="tag">Access Control</span>
-      </div>
-      <span class="expand-hint">View Details ↓</span>
-      <div class="details-content">
-        <p><strong>Research Lead</strong></p>
-        <p>
-          Developed a secure <strong>access control framework</strong> for <strong>multi-agent systems</strong> where LLMs interact with shared sensitive resources. The system mitigates the <strong>Confused Deputy problem</strong> by attaching taint metadata to instructions, preserving original actor privileges. All tool invocations are routed through a centralized Privilege Control Gateway, enforcing <strong>least-privilege</strong> execution based on the instruction’s origin.
-        </p>
-        <p>
-          Implemented in Python for a financial services testbed, the framework tracks instruction provenance across multi-hop workflows. Evaluation against Baseline, RBAC, and ABAC models reduced attack success rates by <strong>65%</strong> while maintaining high throughput, demonstrating effective context-aware, instruction-level authorization for multi-agent systems.
-        </p>
-      </div>
-    </div>
-
-    <div class="card project-card" onclick="this.classList.toggle('expanded')" aria-expanded="false">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
         <h3 style="margin:0;">ECE 113DA/DW - Digital Signal Processing Design Projects</h3>
       </div>
-      <div style="display:flex; align-items:center;">
+      <div style="display:flex; align-items:center; flex-wrap:wrap;">
         <span class="tag">Embedded C</span>
         <span class="tag">STM32</span>
         <span class="tag">ARM Cortex-M7</span>
@@ -669,57 +640,86 @@
       <div class="details-content">
         <div>
           <p>Note: I am not allowed to publicly share the code due to course policies.</p>
-          <h3>Project 1: Fast Fourier Transform (FFT) Implementation</h3>
+          <h3>Fast Fourier Transform</h3>
           <p>
-            Developed <strong>embedded software</strong> on an STM32 H7 microcontroller to sample analog signals via ADC/DMA and compute 1D and 2D <strong>Fast Fourier Transforms</strong>. Processed data on board and transferred frequency-domain data using <strong>UART</strong> to visualize with MATLAB plotting.
+            Sampled analog signals on an STM32 H7 using ADC/DMA, computed 1D and 2D <strong>Fast Fourier Transforms</strong>, and streamed frequency-domain data over UART for MATLAB visualization.
           </p>
         </div>
         <div>
-          <h3>Project 2: Embedded Voice Transformation System</h3>
+          <h3>Embedded Voice Transformation</h3>
           <p>
-            Developed an <strong>embedded DSP application</strong> on the STM32 H7 to record, process, and playback voice. Implemented real-time audio sampling, LED feedback, and pushbutton control to apply effects such as reverb and speed modification.
+            Built a real-time audio application for recording, processing, and playback with embedded sampling, LED feedback, pushbutton control, reverb, and speed modification.
           </p>
         </div>
         <div>
-          <h3>Project 3: Embedded Neural Network</h3>
+          <h3>Embedded Neural Network</h3>
           <p>
-            Implemented and deployed <strong>convolutional neural networks</strong> for MNIST digit classification on an STM32 H7 microcontroller. Compared three inference strategies—C implementation, X-CUBE-AI, and off-chip execution (UART)—by measuring execution time and resource usage.
+            Deployed <strong>convolutional neural networks</strong> for MNIST digit classification on an STM32 H7 and compared C, X-CUBE-AI, and UART off-chip inference paths by execution time and resource use.
           </p>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="card project-card" onclick="this.classList.toggle('expanded')" aria-expanded="false">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <h3 style="margin:0;">CS 111 - Operating System Projects</h3>
-      </div>
-      <div style="display:flex; align-items:center;">
-        <span class="tag">Low Level C</span>
-        <span class="tag">Multi-Threaded Programming</span>
-        <span class="tag">Multi-Processed Programming</span>
-        <span class="tag">Network Protocols</span>
-      </div>
-      <span class="expand-hint">View Details ↓</span>
-      <div class="details-content">
-        <div>
-          <p>Note: I am not allowed to publicly share the code due to course policies.</p>
-          <h3>Project 1: Shell Implementation</h3>
-          <p>
-            Developed a Unix-like shell in C that leverages <strong>low-level system calls</strong> to explore OS and architecture fundamentals. Implemented built-in and external command execution with <strong>fork/execve/waitpid</strong>, supporting foreground/background jobs via process groups, terminal control, and signal handling. Added PATH resolution, environment inheritance, and I/O redirection, manually constructing execution contexts at runtime. Demonstrates understanding of process lifecycles, job control, signal semantics, and OS-managed execution contexts.
-          </p>
+  <section id="skills">
+    <h2>Technical <span class="gradient-text">Skills</span></h2>
+    <div class="card">
+      <div class="skills-container">
+
+        <div class="skill-category">
+          <h4>Hardware Security</h4>
+          <div class="skill-list">
+            <div class="skill-item">BBRAM Zeroization</div>
+            <div class="skill-item">Anti-Tamper Validation</div>
+            <div class="skill-item">Fault Injection Emulation</div>
+            <div class="skill-item">RF Fingerprinting</div>
+            <div class="skill-item">CompTIA Security+</div>
+          </div>
         </div>
-        <div>
-          <h3>Project 2: Pintos Kernel System Call Implementation</h3>
-          <p>
-            Implemented userspace system call support in Pintos, connecting user programs to kernel-managed resources via a <strong>secure syscall interface</strong>. Designed per-process <strong>file descriptor tables</strong> to map user-visible descriptors to kernel file objects, implementing synchronized file system syscalls and enforcing isolation. Validated user memory, safely terminated processes on illegal access, and ensured resource ownership by closing files on exit. Demonstrates OS abstractions—processes, file descriptors, syscalls—built on memory protection, synchronization, and kernel execution.
-          </p>
+
+        <div class="skill-category">
+          <h4>RTL / FPGA</h4>
+          <div class="skill-list">
+            <div class="skill-item">Verilog / SystemVerilog</div>
+            <div class="skill-item">Vivado / Vitis</div>
+            <div class="skill-item">Yosys / Icarus Verilog</div>
+            <div class="skill-item">Testbenches / Waveforms</div>
+            <div class="skill-item">Artix-7 / Versal</div>
+          </div>
         </div>
-        <div>
-          <h3>Project 3: Network Server Implementation</h3>
-          <p>
-            Developed a HTTP web server in C that serves static files and directory listings, validates client paths to prevent directory traversal, and handles errors with proper HTTP status codes. Supports correct content lengths, index.html handling, and memory-safe file I/O. Concurrency is achieved via <strong>forked processes</strong> with SIGCHLD handling or detached <strong>POSIX threads</strong>. Demonstrates OS-level principles including TCP socket management, file descriptor safety, memory isolation, and concurrent resource handling.
-          </p>
+
+        <div class="skill-category">
+          <h4>SoC / Embedded</h4>
+          <div class="skill-list">
+            <div class="skill-item">Bare-Metal C / C++</div>
+            <div class="skill-item">PetaLinux</div>
+            <div class="skill-item">RPU / APU Development</div>
+            <div class="skill-item">PLM / Secure Boot Flow</div>
+            <div class="skill-item">NVM Library Integration</div>
+          </div>
         </div>
+
+        <div class="skill-category">
+          <h4>ML / Signal Processing</h4>
+          <div class="skill-list">
+            <div class="skill-item">Variational Autoencoders</div>
+            <div class="skill-item">GNU Radio</div>
+            <div class="skill-item">SDR (ADALM-Pluto / HackRF)</div>
+            <div class="skill-item">Python / MATLAB</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4>Tools / Languages</h4>
+          <div class="skill-list">
+            <div class="skill-item">Git / Linux / Docker</div>
+            <div class="skill-item">Bash</div>
+            <div class="skill-item">GDB</div>
+            <div class="skill-item">UART</div>
+            <div class="skill-item">English / Japanese</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
